@@ -1,0 +1,48 @@
+{
+ "name": "loop_of_doom",
+ "task": "Find the cheapest flight BLR to DEL on 5 Nov",
+ "steps": [
+  {
+   "type": "tool_call",
+   "tool": "search_flights",
+   "args": {
+    "from": "BLR",
+    "to": "DEL",
+    "date": "2026-11-05"
+   }
+  },
+  {
+   "type": "tool_result",
+   "tool": "search_flights",
+   "content": "429 Too Many Requests"
+  },
+  {
+   "type": "tool_call",
+   "tool": "search_flights",
+   "args": {
+    "from": "BLR",
+    "to": "DEL",
+    "date": "2026-11-05"
+   }
+  },
+  {
+   "type": "tool_result",
+   "tool": "search_flights",
+   "content": "429 Too Many Requests"
+  },
+  {
+   "type": "tool_call",
+   "tool": "search_flights",
+   "args": {
+    "from": "BLR",
+    "to": "DEL",
+    "date": "2026-11-05"
+   }
+  },
+  {
+   "type": "tool_result",
+   "tool": "search_flights",
+   "content": "429 Too Many Requests"
+  }
+ ]
+}
